@@ -12,8 +12,6 @@
   </div>
 </div>
 
-  {{ celeb.actor_name }} ({{ celeb.character_name }}) is {{celeb.gender}} character and {{celeb.status}}
-
 <button class="btn btn-primary" (click)="addClick()"> Display Details </button>
 <p *ngIf="buttonActive">secret password = tuna Dont forget it</p>
 <p *ngFor="let l of list" [ngStyle]="{'background-color':l >= 5 ? 'blue' : 'white','color':l >= 5 ? 'white' : 'black'}" >
