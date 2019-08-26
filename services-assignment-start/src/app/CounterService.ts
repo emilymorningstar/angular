@@ -1,5 +1,8 @@
 export class CounterService {
-count = 0;
+static count = 0;
 
-
+onChange() {
+  CounterService.count = CounterService.count + 1;
+  console.log(CounterService.count);
+}
 }

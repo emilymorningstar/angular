@@ -1,12 +1,13 @@
 import {EventEmitter, Output} from '@angular/core';
-import {printLine} from 'tslint/lib/verify/lines';
+import {CounterService} from './CounterService';
+
 
 export class UsersService {
   activeUsers = ['Max', 'Anna'];
   inactiveUsers = ['Chris', 'Manu'];
-  // userUpdated = new EventEmitter<string[]>();
+  userUpdated = new EventEmitter<string[]>();
   makeActive(id: number) {
-    this.activeUsers.push();
+    this.activeUsers.push(this.inactiveUsers[id]);
     this.inactiveUsers.splice(id, 1);
     console.log('active' + this.activeUsers);
     console.log('inactive' + this.inactiveUsers);
