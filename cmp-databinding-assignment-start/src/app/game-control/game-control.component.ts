@@ -1,5 +1,4 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {ActivationStart} from '@angular/router';
 
 @Component({
   selector: 'app-game-control',
