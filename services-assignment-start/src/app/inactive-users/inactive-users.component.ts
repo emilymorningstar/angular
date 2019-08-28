@@ -1,6 +1,4 @@
 import { Component, Input  } from '@angular/core';
-import {UsersService} from '../UsersService';
-import {CounterService} from '../CounterService';
 
 @Component({
   selector: 'app-inactive-users',

@@ -1,5 +1,4 @@
 import {EventEmitter, Output} from '@angular/core';
-import {CounterService} from './CounterService';
 
 
 export class UsersService {
